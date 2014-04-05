@@ -1,4 +1,6 @@
-dart_design_patterns
+Dart Design Patterns
 ====================
 
 A collection of the common design patterns implemented in Dart
+
+
