@@ -7,17 +7,17 @@ void main(){
     expect(shape is IShape, isTrue);
   });
   
-  test("new instance os Rectangle is created", (){
+  test("new instance of Rectangle is created", (){
     var rectangle = new Rectangle();
     expect(rectangle is IShape, isTrue);
   });
   
-  test("new instance os Circle is created", (){
+  test("new instance of Circle is created", (){
     var circle = new Circle();
     expect(circle is IShape, isTrue);
   });
   
-  test("new instance os Square is created", (){
+  test("new instance of Square is created", (){
     var circle = new Square();
     expect(circle is IShape, isTrue);
   });

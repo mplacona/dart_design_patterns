@@ -1,5 +1,5 @@
 class IShape{
-  //void draw(){}
+  void draw(){}
 }
 
 class Rectangle implements IShape{
@@ -29,16 +29,17 @@ class ShapeFactory{
     
     // check for types
     var type = shapeType.toLowerCase();
-    if(type == "rectangle"){
-      return new Rectangle();
-    }
-    else if(type == "circle"){
-      return new Circle();
-    }
-    else if(type == "square"){
-      return new Square();
-    }
-    
+    switch(type){
+      case "rectangle":
+        return new Rectangle();
+        break;
+      case "circle":
+        return new Circle();
+        break;
+      case "square":
+        return new Square();
+        break;
+    }    
     return null;
   }
 }
