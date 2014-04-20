@@ -39,13 +39,13 @@ class ShapeFactory{
       case "square":
         return new Square();
         break;
-    }    
+    }  
+    // we always return null if there are no matches
     return null;
   }
 }
 
 void main() {
-  print("Hello, World!");
   var factory = new ShapeFactory();
   var rectangle = factory.getShape('rectangle');
   rectangle.draw();
