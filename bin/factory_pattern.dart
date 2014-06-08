@@ -32,13 +32,10 @@ class ShapeFactory{
     switch(type){
       case "rectangle":
         return new Rectangle();
-        break;
       case "circle":
         return new Circle();
-        break;
       case "square":
         return new Square();
-        break;
     }  
     // we always return null if there are no matches
     return null;
